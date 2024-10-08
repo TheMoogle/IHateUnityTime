@@ -2,6 +2,21 @@
 
 Because I can't detect System Time Format in Unity
 
+## Support
+
+| OS      | Supported |
+|---------|-----------|
+| Windows | ✔️         |
+| Linux   | ⚠️         |
+| macOS   | ❌         |
+| Android | ❌         |
+
+✔️ - Supported
+
+⚠️ - Untested
+
+❌ - Unsupported
+
 ## How to use
 
 1. Build the project
@@ -19,5 +34,7 @@ bool is24hr = UnityTimeHater.Is24HourClock();
 ## Building
 
 1. Clone the git repo
-2. Run `cmake .. -DCMAKE_BUILD_TYPE=Release`
-3. Run `cmake --build . --config Release`
+2. Create a build Directory and cd into it
+   + `cmake-build-debug`, `cmake-build-release-windows`, `cmake-build-release-linux`, etc.
+4. Run `cmake .. -DCMAKE_BUILD_TYPE=Release`
+5. Run `cmake --build . --config Release`
